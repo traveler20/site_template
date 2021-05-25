@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SMAPLE SITE</title>
+
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+  <!--css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="header-logo">
+        <a href="#">
+          <img src="./assets/img/header-logo.png" alt="SAMPlE SITE">
+        </a>
+      </h1>
+      <nav id="header-nav" class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a href="#">TOP</a></li>
+          <li class="header-nav-item"><a href="#">ABOUT</a></li>
+          <li class="header-nav-item"><a href="#">ACCESS</a></li>
+          <li class="header-nav-item"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="header-nav-toggle" class="header-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div><!-- /header-inner -->
+  </header>
+
+
+  <div class="kv swiper-container">
+    <ul class="kv-slider swiper-wrapper">
+      <li class="kv-slide swiper-slide">
+        <img class="pc" src="./assets/img/img_slider_01.jpg" alt="">
+        <img class="sp" src="./assets/img/img_slider_01_sp.jpg" alt="">
+      </li>
+      <li class="swiper-slide">
+        <img class="pc" src="./assets/img/img_slider_02.jpg" alt="">
+        <img class="sp" src="./assets/img/img_slider_02_sp.jpg" alt="">
+      </li>
+      <li class="swiper-slide">
+        <img class="pc" src="./assets/img/img_slider_03.jpg" alt="">
+        <img class="sp" src="./assets/img/img_slider_03_sp.jpg" alt="">
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+  <section class="about">
+    <div class="inner">
+      <div class="section-ttl-wrap">
+        <h2 class="section-ttl">ABOUT</h2>
+      </div>
+      <ul class="about-list">
+        <li class="about-item">
+          <img src="./assets/img/img_about_01.jpg" alt="" class="about-item-img">
+          <p class="about-item-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </li>
+        <li class="about-item">
+          <img src="./assets/img/img_about_01.jpg" alt="" class="about-item-img">
+          <p class="about-item-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </li>
+        <li class="about-item">
+          <img src="./assets/img/img_about_01.jpg" alt="" class="about-item-img">
+          <p class="about-item-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="company">
+    <div class="inner">
+      <div class="section-ttl-wrap">
+        <h2 class="section-ttl">COMPANY</h2>
+      </div>
+      <div class="company-wrap">
+        <p class="company-subttl">TEST COMPANY</p>
+        <img src="./assets/img/img_company_01.jpg" alt="" class="company-img">
+        <p class="company-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        <a href="#" class="company-btn">MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="inner">
+      <div class="section-ttl-wrap">
+        <h2 class="section-ttl">CONTACT</h2>
+      </div>
+      <div class="contact-box-wrap">
+        <div class="contact-box">
+          <label class="contact-box-label">お名前</label>
+          <input class="contact-box-input" type="text" placeholder="Yamada Taro">
+        </div>
+        <div class="contact-box">
+          <label class="contact-box-label">メールアドレス</label>
+          <input class="contact-box-input" type="email" placeholder="aaa@aaaaaa">
+        </div>
+        <div class="contact-box">
+          <label class="contact-box-label">電話番号</label>
+          <input class="contact-box-input" type="tel" placeholder="00000000000" maxlength="11">
+        </div>
+        <div class="contact-box contact-box--textarea">
+          <label class="contact-box-label">お問い合わせ内容</label>
+          <textarea class="contact-box-input contact-box-input--textarea" placeholder="お問い合わせ内容をご入力ください"></textarea>
+        </div>
+        <button class="contact-btn">
+          送信
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="copyright"><small>&copy;Copyright</small></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+<script>
+
+</script>
+
+</html>

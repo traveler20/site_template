@@ -1,0 +1,146 @@
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #24acf2;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-inner {
+  position: relative;
+  width: 1040px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header-logo {
+  width: 200px;
+  line-height: 0;
+  a {
+    display: block;
+  }
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  transform: translateY(-100%);
+  background: #24acf2;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-nav.active {
+  transform: translateY(0);
+}
+
+.header-nav-list {
+  max-width: 1000px;
+  margin: auto;
+  padding: 100px 40px 0;
+}
+
+.header-nav-item {
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+  a {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.header-nav-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  height: 25px;
+  width: 40px;
+  span {
+    position: absolute;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    width: 35px;
+    transition: 0.3s;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 10px;
+    }
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+}
+
+.header-nav-toggle.active {
+  span {
+    &:nth-child(1) {
+      transform: rotate(-45deg);
+      top: 10px;
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    height: 60px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translateY(0);
+    background: transparent;
+    height: auto;
+    width: auto;
+  }
+
+  .header-nav.active {
+    transform: translateY(0);
+  }
+
+  .header-nav-list {
+    display: flex;
+    padding: 0;
+  }
+
+  .header-nav-item {
+    &:not(:first-child) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+    a {
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+
+  .header-nav-toggle {
+    display: none;
+  }
+}

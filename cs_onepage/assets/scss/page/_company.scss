@@ -1,0 +1,103 @@
+.company {
+  margin-top: 4rem;
+}
+
+.company-subttl {
+  margin-top: 1.5rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.company-img {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.company-txt {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.company-btn {
+  position: relative;
+  display: block;
+  padding: 1rem 0;
+  margin: 3rem auto 0;
+  border: 0.2rem solid #24acf2;
+  border-radius: 2.5rem;
+  color: #24acf2;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  width: 24rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 960px) {
+  .company {
+    margin-top: 80px;
+  }
+
+  .company-wrap {
+    margin-top: 40px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 42px 1fr 50px;
+    grid-template-columns: calc(50% - 35px) calc(50% - 35px);
+  }
+
+  .company-subttl {
+    margin-top: 0;
+    text-align: left;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: start;
+  }
+
+  .company-img {
+    margin-top: 0;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .company-txt {
+    margin-top: 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .company-btn {
+    margin: 0;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    &:hover {
+      color: #fff;
+      background: #24acf2;
+      transition: 0.3s;
+      &::before {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+    &::before {
+      background: #24acf2;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 25px;
+      transform: scaleX(0);
+      transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform-origin: 0 0;
+      z-index: -1;
+    }
+  }
+}

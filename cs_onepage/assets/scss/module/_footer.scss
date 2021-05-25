@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 8rem;
+  padding: 0.8rem 0;
+  background: #777777;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .footer {
+    margin-top: 100px;
+    padding: 19px 0;
+  }
+  .copyright {
+    font-size: 1.6rem;
+  }
+}

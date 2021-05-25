@@ -1,0 +1,48 @@
+.about {
+  margin-top: 2rem;
+}
+
+.about-list {
+  margin-top: 1.5rem;
+}
+
+.about-item {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 3rem;
+  }
+}
+
+.about-item-img {
+  width: 100%;
+}
+
+.about-item-txt {
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 960px) {
+  .about {
+    margin-top: 70px;
+  }
+
+  .about-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-item {
+    width: calc(100% / 3 - 20px);
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+  }
+
+  .about-item-txt {
+    margin-top: 20px;
+  }
+}
