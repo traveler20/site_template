@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Lopan cafe</title>
+		<meta name="description" content="" />
+		<link rel="canonical" href="https://lopan.jp/css-animation" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div id="opening"><i class="logo"></i></div>
+		<div id="wrapper">
+			<input type="checkbox" id="navTgl" class="hide" />
+			<div id="all" class="hide"></div>
+			<div id="hello" class="hide"></div>
+			<div id="menu" class="hide"></div>
+			<div id="about" class="hide"></div>
+			<div id="contact" class="hide"></div>
+			<div id="blog" class="hide"></div>
+
+			<header>
+				<h1 class="logo">
+					<a href="#all"
+						><img
+							src="https://sample.lopan.jp/css-animation/img/logo.svg"
+							alt="Lopan cafe"
+							width="152"
+							height="79"
+					/></a>
+				</h1>
+				<nav>
+					<ul>
+						<li><a href="#all">home</a></li>
+						<li><a href="#menu">menu</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#contact">contact</a></li>
+						<li><a href="#blog">blog</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main id="contents">
+				<section class="hello">
+					<h2>hello</h2>
+					<p class="txt">
+						こんにちは、Lopanです。<br />
+						このページは<a href="https://lopan.jp/css-animation">こちらの記事</a
+						>のためのサンプルページです。
+					</p>
+					<div id="visual">
+						<input
+							type="radio"
+							name="autoplay"
+							id="auto"
+							class="hide"
+							checked
+						/>
+						<input type="radio" name="autoplay" id="manual" class="hide" />
+						<input
+							type="radio"
+							name="visual"
+							id="image1"
+							class="hide"
+							checked
+						/>
+						<input type="radio" name="visual" id="image2" class="hide" />
+						<input type="radio" name="visual" id="image3" class="hide" />
+						<ul class="image">
+							<li class="pan">
+								<img
+									src="https://sample.lopan.jp/css-animation/img/img_slide_01.jpg"
+									alt=""
+									width="810"
+									height="300"
+									class="bg"
+								/>
+								<img
+									src="https://sample.lopan.jp/css-animation/img/img_slide_emission.png"
+									alt=""
+									width="604"
+									height="602"
+									class="obj1"
+								/>
+								<img
+									src="https://sample.lopan.jp/css-animation/img/img_slide_pan.png"
+									alt=""
+									width="153"
+									height="269"
+									class="obj2"
+								/>
+							</li>
+							<li>
+								<img
+									src="https://sample.lopan.jp/css-animation/img/img_slide_02.jpg"
+									alt=""
+									width="810"
+									height="300"
+									class="bg"
+								/>
+							</li>
+							<li>
+								<img
+									src="https://sample.lopan.jp/css-animation/img/img_slide_03.jpg"
+									class="bg"
+								/>
+							</li>
+						</ul>
+						<ul class="signal">
+							<li><label for="image1"></label></li>
+							<li><label for="image2"></label></li>
+							<li><label for="image3"></label></li>
+						</ul>
+						<p class="playBtn">
+							<label for="auto"></label><label for="manual"></label>
+						</p>
+					</div>
+				</section>
+
+				<section class="menu">
+					<h2>menu</h2>
+					<input type="radio" name="manu" id="imgList" class="hide" checked />
+					<input type="radio" name="manu" id="txtList" class="hide" />
+					<ul class="switch">
+						<li><label for="imgList"></label></li>
+						<li><label for="txtList"></label></li>
+					</ul>
+					<ul class="menuList">
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_01.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>カンパーニュ</dt>
+								<dd class="txt">
+									<q
+										>フランスパンの一種。フランス語で「田舎パン」を意味し、スープによく合う食事パン。<span
+											class="note"
+											>出典：<a
+												href="//ja.wikipedia.org/wiki/パン・ド・カンパーニュ"
+												>Wikipedia</a
+											></span
+										></q
+									>
+								</dd>
+								<dd class="price">¥800</dd>
+							</dl>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_02.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>豆パン</dt>
+								<dd class="txt">
+									甘納豆としっとりパン生地がやさしく甘くて、気持ちがほっこりあったまるお豆パン。<span
+										class="note"
+										>参考：<a href="//shiawase-pan.asmik-ace.co.jp/index.html"
+											>しあわせのパン</a
+										></span
+									>
+								</dd>
+								<dd class="price">¥500</dd>
+							</dl>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_03.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>スパンダワー</dt>
+								<dd class="txt">
+									<q
+										>しっとり濃厚なカスタードクリームと軽い食感の生地が相性抜群。<span
+											class="note"
+											>出典：<a
+												href="//www.amazon.co.jp/パンの図鑑-井上-好文/dp/4839938369"
+												>パンの図鑑</a
+											></span
+										></q
+									>
+								</dd>
+								<dd class="price">¥200</dd>
+							</dl>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_04.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>ラージクリンゲル</dt>
+								<dd class="txt">
+									<q
+										>表面はサクッと香ばしく、中のクリームはしっとりとしていて、食感の違いが楽しめる。<span
+											class="note"
+											>出典：<a
+												href="//www.amazon.co.jp/パンの図鑑-井上-好文/dp/4839938369"
+												>パンの図鑑</a
+											></span
+										></q
+									>
+								</dd>
+								<dd class="price">¥600</dd>
+							</dl>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_05.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>カイザーゼンメル</dt>
+								<dd class="txt">
+									<q
+										>クラストのサクッとしたクリスピーな食感が特徴で、クラムの食感も軽く、小麦の味わいが広がるシンプルな食事パン。<span
+											class="note"
+											>出典：<a
+												href="//www.amazon.co.jp/パンの図鑑-井上-好文/dp/4839938369"
+												>パンの図鑑</a
+											></span
+										></q
+									>
+								</dd>
+								<dd class="price">¥400</dd>
+							</dl>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_menu_06.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+							<dl>
+								<dt>クロワッサン</dt>
+								<dd class="txt">
+									<q
+										>三日月形に作るフランス発祥のパン。種類にもよるがバターを多く使っており、サクサクした食感と甘みが特徴的。<span
+											class="note"
+											>出典：<a href="//ja.wikipedia.org/wiki/クロワッサン"
+												>Wikipedia</a
+											></span
+										></q
+									>
+								</dd>
+								<dd class="price">¥300</dd>
+							</dl>
+						</li>
+					</ul>
+				</section>
+
+				<section class="about">
+					<h2>about</h2>
+					<ul>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_about_01.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_about_02.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+						</li>
+						<li>
+							<img
+								src="https://sample.lopan.jp/css-animation/img/img_about_03.jpg"
+								alt=""
+								width="264"
+								height="180"
+							/>
+						</li>
+					</ul>
+					<div class="txt">
+						<p>
+							手作りパンの香りがほっこりやさしい気持ちにしてくれる、あなたの街のパンカフェです。<br />
+							おいしいパンとあったかカフェで、心やすらぐ特別なひとときをご提供いたします。
+						</p>
+						<dl>
+							<dt>営業時間</dt>
+							<dd>10時〜パンが売り切れ次第</dd>
+							<dt>定休日</dt>
+							<dd>月曜日・火曜日</dd>
+							<dt>住所</dt>
+							<dd>〒123-4567 あなたの街8丁目9-10</dd>
+							<dt>電話</dt>
+							<dd>03-1234-56789</dd>
+						</dl>
+					</div>
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832938.8288137254!2d138.72777770000002!3d35.363902171335994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60196290556df7cf%3A0x8d5003885b877511!2z5a-M5aOr5bGx!5e0!3m2!1sja!2sjp!4v1391327121875"
+							width="440"
+							height="250"
+							frameborder="0"
+							style="border: 0"
+						></iframe>
+						<p class="note alignR">※地図の場所は富士山です。</p>
+					</div>
+				</section>
+
+				<section class="contact">
+					<h2>contact</h2>
+					<p class="txt">お気軽にお問い合わせください。</p>
+					<form>
+						<div class="input">
+							<ul class="personal">
+								<li>
+									<label
+										><span>お名前</span><input type="text" name="" required
+									/></label>
+								</li>
+								<li>
+									<label
+										><span>メールアドレス</span
+										><input type="email" name="" required
+									/></label>
+								</li>
+								<li>
+									<label
+										><span>URL</span
+										><input
+											type="url"
+											name=""
+											placeholder="https://cafe.lopan.jp"
+											required
+									/></label>
+								</li>
+								<li>
+									<label
+										><span>電話番号</span
+										><input
+											type="tel"
+											name=""
+											pattern="\d{1,5}-\d{1,4}-\d{3,5}"
+											title="市外局番から「-（ハイフン）」を入れて入力してください。"
+									/></label>
+								</li>
+							</ul>
+							<div class="message">
+								<label
+									><span>お問い合わせ内容</span
+									><textarea name="" required></textarea>
+								</label>
+							</div>
+						</div>
+						<p class="btn">
+							<input type="submit" value="送信する" /><br />
+							<span class="note">※送信はされません。</span>
+						</p>
+					</form>
+				</section>
+
+				<section class="blog">
+					<h2>blog</h2>
+					<div class="carousel">
+						<input type="radio" name="blog" id="thumb1" class="hide" checked />
+						<input type="radio" name="blog" id="thumb2" class="hide" />
+						<input type="radio" name="blog" id="thumb3" class="hide" />
+						<input type="radio" name="blog" id="thumb4" class="hide" />
+						<input type="radio" name="blog" id="thumb5" class="hide" />
+						<input type="radio" name="blog" id="thumb6" class="hide" />
+						<input type="radio" name="blog" id="thumb7" class="hide" />
+						<input type="radio" name="blog" id="thumb8" class="hide" />
+						<input type="radio" name="blog" id="thumb9" class="hide" />
+						<input type="radio" name="blog" id="thumb10" class="hide" />
+						<input type="radio" name="blog" id="thumb11" class="hide" />
+						<input type="radio" name="blog" id="thumb12" class="hide" />
+						<input type="radio" name="blog" id="thumb13" class="hide" />
+						<input type="radio" name="blog" id="thumb14" class="hide" />
+						<input type="radio" name="blog" id="thumb15" class="hide" />
+						<input type="radio" name="blog" id="thumb16" class="hide" />
+						<input type="radio" name="blog" id="thumb17" class="hide" />
+						<ul class="container">
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2014/01/icon_lovefont-300x300.png"
+										alt="なつかしくってあったかい、きりぎりす。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2013/09/icon_texture.jpg"
+										alt="透明ノイズと紙テクスチャ。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2013/09/icon_webdesign4.jpg"
+										alt="Webサイトの作り方のまとめ！ブラウザチェック。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2013/03/icon_photoshop_shape.jpg"
+										alt="Photoshopのシェイプでできること。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/12/icon_css_slideshow.jpg"
+										alt="CSSだけでスライドショーはつくれるよ。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/11/icon_webdesign3-300x300.jpg"
+										alt="Webサイトの作り方のまとめ！トップページ完成まで。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/09/icon_googlemap_api.jpg"
+										alt="Google Maps APIのおさらい。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/08/icon_css_sprites.jpg"
+										alt="CSSスプライトについてあれこれ。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/08/icon_webdesign2-300x300.jpg"
+										alt="Webサイトの作り方のまとめ！コーディングまで。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/07/43884ac3d2dccbeb0936172b6258288c-300x300.jpg"
+										alt="Webサイトの作り方のまとめ！番外。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/07/icon_button-300x300.jpg"
+										alt="カラフルなボタンが作れる汎用レイヤースタイル。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/06/icon_vmware-300x300.jpg"
+										alt="VMwareを使ってmacにwinを入れました。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/03/icon_googlemap_customize.jpg"
+										alt="Googleマップをイラストマップみたいにしたい。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/02/icon_webdesign-300x300.jpg"
+										alt="Webサイトの作り方のまとめ！デザイン制作からコーディング手前まで。"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/01/eye-catch1-300x300.jpg"
+										alt="IE対応まとめ！"
+								/></a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="https://lopan.jp/wp/wp-content/uploads/2012/01/old_lopan-300x300.jpg"
+										alt="Lopan.jpをリニューアルしました！まずはごあいさつ。"
+								/></a>
+							</li>
+						</ul>
+						<div class="prev">
+							<label for="thumb1"></label>
+							<label for="thumb2"></label>
+							<label for="thumb3"></label>
+							<label for="thumb4"></label>
+							<label for="thumb5"></label>
+							<label for="thumb6"></label>
+							<label for="thumb7"></label>
+							<label for="thumb8"></label>
+							<label for="thumb9"></label>
+							<label for="thumb10"></label>
+							<label for="thumb11"></label>
+							<label for="thumb12"></label>
+							<label for="thumb13"></label>
+							<label for="thumb14"></label>
+							<label for="thumb15"></label>
+							<label for="thumb16"></label>
+							<label for="thumb17"></label>
+							<p class="arrow"></p>
+						</div>
+						<div class="next">
+							<label for="thumb1"></label>
+							<label for="thumb2"></label>
+							<label for="thumb3"></label>
+							<label for="thumb4"></label>
+							<label for="thumb5"></label>
+							<label for="thumb6"></label>
+							<label for="thumb7"></label>
+							<label for="thumb8"></label>
+							<label for="thumb9"></label>
+							<label for="thumb10"></label>
+							<label for="thumb11"></label>
+							<label for="thumb12"></label>
+							<label for="thumb13"></label>
+							<label for="thumb14"></label>
+							<label for="thumb15"></label>
+							<label for="thumb16"></label>
+							<label for="thumb17"></label>
+							<p class="arrow"></p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<p class="copyright"><small>© Lopan cafe</small></p>
+			</footer>
+
+			<label for="navTgl" class="close"></label>
+			<aside>
+				<nav>
+					<label for="navTgl" class="open"><i class="bar"></i></label>
+					<ul>
+						<li><a href="#all">home</a></li>
+						<li><a href="#menu">menu</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#contact">contact</a></li>
+						<li><a href="#blog">blog</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+	</body>
+</html>
