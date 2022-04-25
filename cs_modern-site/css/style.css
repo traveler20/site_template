@@ -1,0 +1,270 @@
+/*------------------------------------------------------
+ * base
+ ------------------------------------------------------*/
+html {
+	font-size: 62.5%;
+	position: relative;
+	cursor: none; /*本物のカーソルを非表示に*/
+	min-height: 100vh;
+}
+html a:hover {
+	cursor: none;
+}
+body {
+	position: relative;
+}
+header {
+	height: 50vh;
+	background-color: #333;
+}
+#content {
+	display: flex;
+}
+main {
+	width: 80%;
+	margin: 0 auto;
+}
+aside {
+	width: 20%;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+nav ul {
+	font-size: 2.4rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+footer {
+	display: none;
+}
+
+/*------------------------------------------------------
+ * loading
+ ------------------------------------------------------*/
+/* Loading Block */
+#js-loading {
+	width: 100vw;
+	height: 100vh;
+	transition: all 1s;
+	background-color: #f43e43;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.spinner {
+	width: 100px;
+	height: 100px;
+	margin: 200px auto;
+	background-color: #fff;
+	border-radius: 100%;
+	animation: sk-scaleout 1s infinite ease-in-out;
+}
+/* Loading Animation */
+@keyframes sk-scaleout {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+/* Hide Loading Block */
+.loaded {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*------------------------------------------------------
+ * cursor
+ ------------------------------------------------------*/
+#js-cursor {
+	border-radius: 50%;
+	/*bodyの一番左上になるように配置する*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: none;
+	/*他の要素がクリックできなくならないように*/
+	pointer-events: none;
+	width: 8px;
+	height: 8px;
+	background-color: #454545;
+	/*どの要素よりも一番上になるようにする*/
+	z-index: 1001;
+	/* border: 16px solid #f43e43; */
+	background-clip: padding-box;
+	border: 16px solid rgba(244, 62, 67, 0.8);
+}
+#js-cursor.active {
+	transform: scale(1.8);
+}
+
+/*------------------------------------------------------
+ * textanimation
+ ------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+.textanimation {
+	font-family: "Alfa Slab One", cursive;
+	font-size: 5.6rem;
+	text-align: left;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	width: 80%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+.textanimation p {
+	color: #454545;
+}
+.textanimation .textanimation_scroller {
+	line-height: 1.5em;
+	overflow: hidden;
+	height: 1.5em;
+	margin: 0 0 0 0.7rem;
+}
+.textanimation .textanimation_scroller span {
+	display: block;
+	color: #454545;
+}
+.textanimation .textanimation_scroller .textanimation_inner {
+	-webkit-animation: textanimation_scroll 5s infinite ease-out;
+	animation: textanimation_scroll 5s infinite ease-out;
+}
+/* .textanimation .textanimation_scroller .textanimation_inner::after {
+	position: absolute;
+	top: 1em;
+	left: 8em;
+	content: "🎉";
+	color: #c8c8c8;
+} */
+@-webkit-keyframes textanimation_scroll {
+	15% {
+		margin-top: 0px;
+	}
+	30% {
+		margin-top: 0px;
+	}
+	45% {
+		margin-top: -1.5em;
+	}
+	60% {
+		margin-top: -1.5em;
+	}
+	75% {
+		margin-top: -3em;
+	}
+	90% {
+		margin-top: -3em;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+@keyframes textanimation_scroll {
+	15% {
+		margin-top: 0px;
+	}
+	30% {
+		margin-top: 0px;
+	}
+	45% {
+		margin-top: -1.5em;
+	}
+	60% {
+		margin-top: -1.5em;
+	}
+	75% {
+		margin-top: -3em;
+	}
+	90% {
+		margin-top: -3em;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+/*------------------------------------------------------
+ * 
+ ------------------------------------------------------*/
+/* .btn {
+	position: relative;
+	width: 280px;
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.btn img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.btn img:nth-of-type(1) {
+  top: -100%;
+}
+.btn img:nth-of-type(2) {
+  top: 0;
+}
+.btn:hover img:nth-of-type(1) {
+  top: 0;
+}
+.btn:hover img:nth-of-type(2) {
+  top: 100%;
+} */
+/*レスポンシブ（ナビを下に固定）*/
+@media screen and (max-width: 1000px) {
+	html {
+		cursor: auto;
+	}
+	#js-cursor {
+		display: none;
+	}
+	body {
+		height: 1500px;
+		flex-direction: column;
+	}
+	main {
+		width: 100%;
+		flex: 1;
+	}
+	footer {
+		display: block;
+		/*ナビ分の余白を残す*/
+		margin-bottom: 48px;
+	}
+
+	/*固定ナビのスタイリング*/
+	aside {
+		/*固定する*/
+		position: fixed;
+		/*下に0*/
+		bottom: 0;
+		/*横幅いっぱいに*/
+		width: 100%;
+	}
+	/*listは横並びに設定*/
+	ul {
+		display: flex;
+	}
+	/*flex:1;で伸び縮みするように設定*/
+	li {
+		flex: 1;
+	}
+
+	.textanimation {
+		font-size: 3.6rem;
+	}
+}
