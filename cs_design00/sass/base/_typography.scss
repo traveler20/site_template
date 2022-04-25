@@ -1,0 +1,35 @@
+.heading-primary {
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: $color-primary;
+
+  @include font-size(36);
+  @include mq(md) {
+    @include font-size(30);
+  }
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.heading-primary__sub {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: .02em;
+
+  @include font-size(13);
+}
+
+.heading-secondary {
+  font-weight: bold;
+  line-height: 1;
+  color: $color-primary;
+
+  @include font-size(32);
+  @include mq(md) {
+    @include font-size(24);
+  }
+}

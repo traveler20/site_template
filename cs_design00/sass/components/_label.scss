@@ -1,0 +1,17 @@
+.label-category {
+  font-weight: bold;
+  display: block;
+  width: 80px;
+  padding: 2px 10px;
+  text-align: center;
+  color: $color-text;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+
+  @include font-size(12);
+  @include mq(md) {
+    padding: 2px 8px;
+
+    @include font-size(11);
+  }
+}

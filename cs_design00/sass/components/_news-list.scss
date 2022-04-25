@@ -1,0 +1,38 @@
+.news-list {
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+
+    @include mq(md) {
+      display: block;
+    }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include mq(md) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__heading {
+    display: flex;
+
+    @include mq(md) {
+      margin-bottom: 3px;
+    }
+  }
+  &__body {
+    flex: 1;
+  }
+  &__link {
+    color: $color-text;
+  }
+  &__date {
+    margin-right: 20px;
+  }
+  &__label {
+    margin-right: 20px;
+  }
+}

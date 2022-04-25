@@ -1,0 +1,90 @@
+.post {
+  background-color: #fff;
+  &__head {
+    margin-bottom: 30px;
+
+    @include mq(md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    line-height: 1.5;
+
+    @include font-size(32);
+    @include mq(md) {
+      @include font-size(22);
+    }
+  }
+  &__info {
+    display: flex;
+    margin-top: 10px;
+  }
+  &__date {
+    margin-right: 10px;
+
+    @include font-size(13);
+  }
+  &__body {
+    margin-bottom: 40px;
+    > h3 {
+      position: relative;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      color: $color-secondary;
+
+      @include font-size(24);
+      @include mq(md) {
+        margin-top: 40px;
+
+        @include font-size(18);
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        content: "";
+        border-radius: 3px;
+        background-color: $color-primary;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    > h4 {
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 20px;
+
+      @include font-size(18);
+      @include mq(md) {
+        @include font-size(17);
+      }
+    }
+    > p {
+      margin-bottom: 30px;
+
+      @include font-size(16);
+      @include mq(md) {
+        @include font-size(15);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__sns {
+    margin-bottom: 40px;
+  }
+  &__pager {
+    &__home {
+      text-align: center;
+    }
+  }
+}

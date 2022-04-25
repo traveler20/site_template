@@ -1,0 +1,16 @@
+.contact {
+  margin-top: 40px;
+  padding: 80px 0;
+  text-align: center;
+  background-color: $color-gray;
+
+  @include mq(md) {
+    padding: 60px 0;
+  }
+  &__heading {
+    margin-bottom: 30px;
+  }
+  &__body {
+    margin-bottom: 20px;
+  }
+}

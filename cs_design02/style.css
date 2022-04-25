@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+/*--------------------------------
+ CSSリセット
+---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*--------------------------------
+ 全体
+---------------------------------*/
+
+body {
+  font-family: Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.content {
+  padding: 30px 0;
+}
+
+/*--------------------------------
+ 見出し
+---------------------------------*/
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: .03em;
+  color: #007bff;
+}
+
+.subtitle {
+  font-size: 13px;
+  line-height: 1;
+  display: block;
+  margin-top: 8px;
+  color: #333;
+}
+
+/*--------------------------------
+ボタン
+---------------------------------*/
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  transition: opacity .3s;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #007bff;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+.header .logo {
+  width: 120px;
+}
+
+.header .logo img {
+  backface-visibility: hidden;
+}
+
+/*--------------------------------
+ ニュース
+---------------------------------*/
+.news ul {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.news li {
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.news li:last-child {
+  margin-bottom: 0;
+}
+
+.news .date {
+  margin-right: 40px;
+}
+
+.news a {
+  color: #333;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------
+ コンセプト
+---------------------------------*/
+.concept {
+  display: flex;
+  align-items: center;
+}
+.concept .img {
+  width: 50%;
+}
+
+.concept .text {
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 70px;
+}
+
+.concept .slogan {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/*--------------------------------
+ サービス
+---------------------------------*/
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.service-list .item {
+  width: calc((100% - 60px) / 3);
+}
+
+.service-list .img {
+  margin-bottom: 15px;
+}
+
+.service-list .name {
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+}
+
+.footer .logo {
+  width: 118px;
+  margin: 0 auto 15px;
+  color: #fff;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  text-align: center;
+  color: #7b7b7b;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* 見出し */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  /* レイアウト */
+  .section {
+    padding: 30px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .content {
+    padding: 20px 0;
+  }
+
+  /* ボタン */
+
+  .btn {
+    font-size: 14px;
+    width: 180px;
+    padding: 18px 0;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  /* ヘッダー */
+  .header {
+    height: 60px;
+  }
+
+  .header .logo {
+    width: 90px;
+  }
+
+  /* ニュース */
+  .news li {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .news .date {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  /* コンセプト */
+  .concept {
+    display: block;
+  }
+
+  .concept .img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .concept .text {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .concept .slogan {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  /* サービス */
+  .service-list {
+    display: block;
+  }
+
+  .service-list .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .service-list .img {
+    margin-bottom: 10px;
+  }
+
+  /* フッター */
+  .footer {
+    padding: 20px;
+    background-color: #333;
+  }
+
+  .footer .logo {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+}

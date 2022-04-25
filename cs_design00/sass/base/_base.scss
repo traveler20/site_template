@@ -1,0 +1,49 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Montserrat",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  line-height: 1.8;
+  color: $color-text;
+
+  @include font-size(15);
+  @include mq(md) {
+    @include font-size(14);
+  }
+}
+
+a {
+  transition: .3s;
+  text-decoration: none;
+  color: $color-primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+::selection {
+  color: #fff;
+  background-color: $color-primary;
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  margin-bottom: 50px;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

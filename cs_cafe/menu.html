@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Menu - メニュー | FlowerCafe</title>
+  <meta name="description" content="FlowerCafeの説明が入りますFlowerCafeの説明が入ります" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Menu - メニュー | FlowerCafe" />
+  <meta property="og:description" content="FlowerCafeの説明が入ります" />
+  <meta property="og:url" content="http://127.0.0.1:5500/menu.html" />
+  <meta property="og:site_name" content="FlowerCafe" />
+  <meta property="og:image" content="http://127.0.0.1:5500/img/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@webdesigner_go" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel=”icon” href="favicon.ico">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <h1 class="header-logo">
+      <a href="."><img src="img/logo.png" alt=""></a>
+    </h1>
+
+    <nav class="gnav">
+      <ul class="gnav-list">
+        <li class="gnav-item"><a href=".">Home</a></li>
+        <li class="gnav-item active"><a href="menu.html">Menu</a></li>
+        <li class="gnav-item"><a href="access.html">Access</a></li>
+        <li class="gnav-item"><a href="recruit.html">Recruit</a></li>
+      </ul>
+    </nav>
+
+    <nav class="gnavPC">
+      <ul class="gnavPC-list">
+        <li class="gnavPC-item"><a href=".">Home</a></li>
+        <li class="gnavPC-item active"><a href="menu.html">Menu</a></li>
+        <li class="gnavPC-item"><a href="access.html">Access</a></li>
+        <li class="gnavPC-item"><a href="recruit.html">Recruit</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" id="js-btnMenu" class="btnMenu">
+      <span class="btnMenu-line"></span>
+    </button>
+
+  </header>
+  <!-- /header -->
+
+  <div class="pageVisual">
+    <div class="pageVisual-inner">
+      <h2 class="pageVisual-title">Menu</h2>
+      <div class="pageVisual-subtitle">メニュー</div>
+    </div>
+  </div>
+
+  <main class="content">
+    <section class="menu section">
+      <div class="container">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-img"><img src="img/menu-coffee.jpg" alt=""></div>
+            <div class="menu-title">コーヒー</div>
+            <div class="menu-price">¥500</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img src="img/menu-cafe-latte.jpg" alt=""></div>
+            <div class="menu-title">カフェラテ</div>
+            <div class="menu-price">¥500</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img src="img/menu-flower-coffee.jpg" alt=""></div>
+            <div class="menu-title">フラワーコーヒー</div>
+            <div class="menu-price">¥1,000</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img src="img/menu-flower-pudding.jpg" alt=""></div>
+            <div class="menu-title">フラワープリン</div>
+            <div class="menu-price">¥500</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img src="img/menu-flower.jpg" alt=""></div>
+            <div class="menu-title">各種フラワー</div>
+            <div class="menu-price">¥1,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <nav class="footerNav">
+      <ul class="footerNav-list">
+        <li class="footerNav-item"><a href=".">Home</a></li>
+        <li class="footerNav-item"><a href="menu.html">Menu</a></li>
+        <li class="footerNav-item"><a href="access.html">Access</a></li>
+        <li class="footerNav-item"><a href="recruit.html">Recruit</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copyright">&copy;FlowerCafe</div>
+  </footer>
+  <!-- /footer -->
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

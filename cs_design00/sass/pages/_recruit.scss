@@ -1,0 +1,118 @@
+.page-recruit {
+  background-image: url(/img/bg-geometry.png);
+  /* Background pattern from Toptal Subtle Patterns */
+  background-repeat: repeat;
+
+  @include mq(md) {
+    background-size: 50%;
+  }
+}
+
+.recruit-message {
+  text-align: center;
+  &__heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: $color-primary;
+
+    @include mq(md) {
+      margin: 20px 0;
+    }
+  }
+  &__title {
+    line-height: 1;
+    margin-bottom: 10px;
+
+    @include font-size(72);
+    @include mq(md) {
+      line-height: 1.2;
+
+      @include font-size(48);
+    }
+  }
+  &__subtitle {
+    @include font-size(32);
+    @include mq(md) {
+      @include font-size(18);
+    }
+  }
+  &__body {
+    margin-bottom: 40px;
+
+    @include font-size(16);
+    @include mq(md) {
+      @include font-size(15);
+    }
+  }
+
+  &__img-wrapper {
+    overflow: hidden;
+    height: 780px;
+    background-image: url(/img/recruit01.jpg);
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    background-size: cover;
+
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    @include mq(md) {
+      height: 400px;
+    }
+  }
+}
+
+.job-list {
+  padding-top: 0;
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__name {
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include font-size(24);
+    @include mq(md) {
+      margin-bottom: 20px;
+
+      @include font-size(16);
+    }
+  }
+  &__detail {
+    padding: 60px 95px;
+    border: 1px solid #b067cf;
+    border-radius: 6px;
+    background-color: #fff;
+
+    @include mq(md) {
+      padding: 30px 20px;
+    }
+  }
+  &__table {
+    margin-bottom: 50px;
+
+    @include mq(md) {
+      margin-bottom: 40px;
+    }
+  }
+  &__link {
+    text-align: center;
+  }
+  &__link-note {
+    display: block;
+    margin-top: 5px;
+
+    @include font-size(12);
+  }
+}
+
+.company-gallery {
+  &__heading {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include mq(md) {
+      margin-bottom: 30px;
+    }
+  }
+}

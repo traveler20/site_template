@@ -1,0 +1,18 @@
+.contact-form {
+  &__lead {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include mq(md) {
+      margin-bottom: 30px;
+    }
+  }
+  &__body {
+    padding: 90px;
+    background-color: #f7f7f7;
+
+    @include mq(md) {
+      padding: 30px;
+    }
+  }
+}

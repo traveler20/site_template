@@ -1,0 +1,11 @@
+.service-detail {
+  .media {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+
+      @include mq(md) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+  transition: all .3s;
+
+  @include mq(md) {
+    padding: 10px 15px;
+  }
+  &.active {
+    padding: 20px 30px;
+    background-color: $color-primary-dark;
+
+    @include mq(md) {
+      padding: 10px 15px;
+    }
+  }
+
+  &__logo {
+    @include mq(md) {
+      width: 120px;
+    }
+  }
+}

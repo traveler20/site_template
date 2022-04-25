@@ -1,0 +1,23 @@
+.sns-share {
+  &__item {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 2px;
+    vertical-align: bottom;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  iframe {
+    vertical-align: middle;
+  }
+}
+
+.fa-hatena {
+  &::before {
+    font-family: Verdana;
+    font-weight: bold;
+    content: "B!";
+    letter-spacing: -.05em;
+  }
+}
